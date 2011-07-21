@@ -357,7 +357,7 @@ describe 'check_boxes input' do
     end
   end
   
-  describe 'when :collection is provided' do
+  describe 'when :collection is provided as an array of arrays' do
     before do
       @output_buffer = ''
       mock_everything
