@@ -191,6 +191,17 @@ describe 'Formtastic::I18n' do
         output_buffer.should have_tag("form label", /Hello login/)
       end
     end
+    
+    it 'should prefer nested model attributes over parent model attributes' do
+      with_config :i18n_lookups_by_default, true do
+        concat(semantic_form_for(:post) do |builder|
+          concat(builder.inputs(:for => :project) do |f|
+            concat(f.input(:title))
+          end)
+        end)
+        output_buffer.should have_tag("form label", /Hello project!/)
+      end
+    end
 
     # TODO: Add spec for namespaced models?
 

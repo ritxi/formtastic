@@ -10,8 +10,8 @@ module Formtastic
         '%{model}.%{nested_model}.%{action}.%{attribute}',
         '%{model}.%{action}.%{attribute}',
         '%{model}.%{nested_model}.%{attribute}',
-        '%{model}.%{attribute}',
         '%{nested_model}.%{attribute}',
+        '%{model}.%{attribute}',
         '%{attribute}'
       ]
 
