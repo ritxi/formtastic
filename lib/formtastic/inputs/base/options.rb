@@ -8,7 +8,7 @@ module Formtastic
         end
         
         def formtastic_options
-          [:priority_countries, :priority_zones, :value_method, :label_method, :member_label, :member_value, :collection, :required, :label, :as, :hint, :input_html, :label_html, :value_as_class, :find_options, :class]
+          [:invert_markup, :priority_countries, :priority_zones, :value_method, :label_method, :member_label, :member_value, :collection, :required, :label, :as, :hint, :input_html, :label_html, :value_as_class, :find_options, :class]
         end
       
       end
